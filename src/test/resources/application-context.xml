@@ -11,6 +11,12 @@
         <property name="country" ref="country"/>
     </bean>
 
+    <bean id="person_next" class="com.luxoft.springioc.lab1.model.UsualPerson">
+        <constructor-arg name="name" value="John Next"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="country" ref="country"/>
+    </bean>
+
     <bean id="country" class="com.luxoft.springioc.lab1.model.Country" autowire="byName">
         <property name="id" value="1"/>
         <property name="name" value="Russia"/>
